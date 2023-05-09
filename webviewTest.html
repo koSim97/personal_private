@@ -9,7 +9,7 @@
   
      <input type="button" value="makeToast" onClick="makeToast()"/>
     <script type="text/javascript">
-      var data = {
+      var toastData = {
         header: {
           command:"makeToast",
           key:"makeToast-0001",
@@ -18,15 +18,15 @@
           message:"test message",
         }
       };
-      var payLoad = JSON.stringify(data);
+      var toast = JSON.stringify(toastData);
     function makeToast() {
-        Example.execute(payLoad);
+        Example.execute(toast);
     }
     </script>
   
        <input type="button" value="setUserInfo" onClick="setUserInfo()"/>
     <script type="text/javascript">
-      var data = {
+      var setData = {
         header: {
           command:"setUserInfo",
           key:"setUserInfo-0001",
@@ -36,23 +36,25 @@
           key:1234,
         }
       };
-      var payLoad = JSON.stringify(data);
+      var setInfo = JSON.stringify(setData);
     function setUserInfo() {
-        Example.execute(payLoad);
+        Example.execute(setInfo);
     }
     </script>
   
        <input type="button" value="getUserInfo" onClick="getUserInfo()"/>
     <script type="text/javascript">
-      var data = {
+      var getData = {
         header: {
           command:"getUserInfo",
           key:"getUserInfo-0001",
         },
+        param: {
+        }
       };
-      var payLoad = JSON.stringify(data);
+      var getInfo = JSON.stringify(getData);
     function getUserInfo() {
-        Example.execute(payLoad);
+        Example.execute(getInfo);
     }
     </script>
   
