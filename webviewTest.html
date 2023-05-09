@@ -7,13 +7,8 @@
 <body>
 테스트 페이지 입니다.1
   
-     <input type="button" value="makeToast" onClick="clickA()"/>
+     <input type="button" value="makeToast" onClick="makeToast()"/>
     <script type="text/javascript">
-      var header = new Object();
-      header.command = "makeToast";
-      header.key = "makeToast-0001;
-      var param = new Object();
-      param.message = "test message";
       var payLoad = {
         header: {
           command = "makeToast",
@@ -23,7 +18,7 @@
           message = "test message",
         }
       }
-    function clickA() {
+    function makeToast() {
         Example.showMessage("test");
     }
     </script>
