@@ -23,6 +23,39 @@
         Example.execute(payLoad);
     }
     </script>
+  
+       <input type="button" value="setUserInfo" onClick="setUserInfo()"/>
+    <script type="text/javascript">
+      var data = {
+        header: {
+          command:"setUserInfo",
+          key:"setUserInfo-0001",
+        },
+        param: {
+          id:"testUserId",
+          key:1234,
+        }
+      };
+      var payLoad = JSON.stringify(data);
+    function setUserInfo() {
+        Example.execute(payLoad);
+    }
+    </script>
+  
+       <input type="button" value="getUserInfo" onClick="getUserInfo()"/>
+    <script type="text/javascript">
+      var data = {
+        header: {
+          command:"getUserInfo",
+          key:"getUserInfo-0001",
+        },
+      };
+      var payLoad = JSON.stringify(data);
+    function getUserInfo() {
+        Example.execute(payLoad);
+    }
+    </script>
+  
   <p id="textFromApp">Android에서 받은 메세지 : </p>
   <script type="text/javascript">
   	function onNativeEvent(myString) {
