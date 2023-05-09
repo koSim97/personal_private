@@ -4,5 +4,26 @@
 </head>
 <body>
 테스트 페이지 입니다.
+  
+     <button type="button" onclick="clickA()">클릭해 보세요!</button>
+    <script>
+      var header = new Object();
+      header.command = "makeToast";
+      header.key = "makeToast-0001;
+      var param = new Object();
+      param.message = "test message";
+      var payLoad = {
+        header: {
+          command = "makeToast",
+          key = "makeToast-0001",
+        },
+        param: {
+          message = "test message",
+        }
+      }
+    function clickA() {
+        Example.showMessage(payLoad);
+    }
+    </script>
 </body
 </html>
