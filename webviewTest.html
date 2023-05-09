@@ -23,5 +23,11 @@
         Example.execute(payLoad);
     }
     </script>
+  <p id="textFromApp">Android에서 받은 메세지 : </p>
+  <script type="text/javascript">
+  	function onNativeEvent(myString) {
+            document.getElementById('textFromApp').innerHTML = myString;
+        }
+  </script>
 </body
 </html>
