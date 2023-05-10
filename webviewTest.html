@@ -5,7 +5,6 @@
     <meta charset="utf-8">
 </head>
 <body>
-테스트 페이지 입니다.1
   
      <input type="button" value="makeToast" onClick="makeToast()"/>
     <script type="text/javascript">
@@ -55,6 +54,24 @@
       var getInfo = JSON.stringify(getData);
     function getUserInfo() {
         Example.execute(getInfo);
+    }
+    </script>
+  
+         <input type="button" value="checkApi" onClick="checkApi()"/>
+    <script type="text/javascript">
+      var apiData = {
+        header: {
+          command:"checkApi",
+          key:"checkApi-0001",
+        },
+        param: {
+          start: 1,
+          end: 2,
+        }
+      };
+      var api = JSON.stringify(apiData);
+    function checkApi() {
+        Example.execute(api);
     }
     </script>
   
