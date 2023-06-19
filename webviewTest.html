@@ -20,7 +20,7 @@
       var toast = JSON.stringify(toastData);
     function makeToast() {
         Example.execute(toast);
-        Example.postMessage(toast);
+        window.webkit.messageHandlers.Example.postMessage(toast);
     }
     </script>
   
