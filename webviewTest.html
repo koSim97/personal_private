@@ -19,7 +19,7 @@
       };
       var toast = JSON.stringify(toastData);
     function makeToast() {
-        Example.execute(toast);
+        bworldApp.execute(toast);
         window.webkit.messageHandlers.Example.postMessage(toast);
     }
     </script>
@@ -38,7 +38,7 @@
       };
       var setInfo = JSON.stringify(setData);
     function setUserInfo() {
-        window.Example.execute(setInfo);
+        window.bworldApp.execute(setInfo);
     }
     </script>
   
@@ -54,7 +54,7 @@
       };
       var getInfo = JSON.stringify(getData);
     function getUserInfo() {
-        Example.execute(getInfo);
+        bworldApp.execute(getInfo);
     }
     </script>
   
@@ -72,7 +72,7 @@
       };
       var api = JSON.stringify(apiData);
     function checkApi() {
-        Example.execute(api);
+        bworldApp.execute(api);
     }
     </script>
 
